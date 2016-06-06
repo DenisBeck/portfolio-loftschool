@@ -1,0 +1,101 @@
+@media screen and (max-width: 958px) {
+  .hide-menu {
+    display: block;
+    float: right;
+    width: 30px;
+    height: 47px;
+    background: url("images/hamb.png") no-repeat 50% 50%;
+    margin-left: 55px;
+    cursor: pointer; }
+  .content,
+  .header__wrap,
+  .footer__wrap {
+    width: 704px;
+    margin: 0 auto; }
+  .sidebar,
+  .content {
+    float: none; }
+  .sidebar {
+    width: 100%; }
+  .lock,
+  .contacts__head,
+  .menu {
+    display: none; }
+  .contacts {
+    max-width: 958px;
+    margin-bottom: 20px; }
+    .contacts__list {
+      display: table;
+      table-layout: fixed;
+      width: 100%; }
+    .contacts__item {
+      display: inline-block;
+      width: 33.3%;
+      text-align: center; }
+      .contacts__item:last-of-type {
+        border-radius: 0; } }
+
+@media screen and (max-width: 768px) {
+  .header__wrap {
+    padding: 12px 0; }
+    .header__wrap .hide-menu {
+      height: 33px; }
+    .header__wrap .soc-icon {
+      display: none; }
+  .logo {
+    width: 169px; }
+    .logo__img {
+      width: 169px; }
+  .content,
+  .header__wrap,
+  .hide,
+  .footer__wrap {
+    width: 292px;
+    margin: 0 auto; }
+  .block-data {
+    text-align: center; }
+    .block-data__head {
+      display: block;
+      padding: 10px 0;
+      border-bottom: none;
+      font-size: 23px; }
+  .contacts {
+    margin-bottom: 20px; }
+    .contacts__list {
+      width: 100%; }
+    .contacts__item {
+      display: block;
+      width: 100%;
+      text-align: center; }
+      .contacts__item:last-of-type {
+        border-radius: 0; }
+  .main__wrap .hide {
+    display: block; }
+    .main__wrap .hide .soc-icon {
+      float: none;
+      text-align: center; } }
+
+@media screen and (max-width: 958px) {
+  .block-data__content {
+    padding: 20px 90px; }
+    .block-data__content .site,
+    .block-data__content .empty {
+      width: 230px;
+      margin-right: 30px; }
+      .block-data__content .site__image,
+      .block-data__content .empty__image {
+        height: 163px; }
+      .block-data__content .site:nth-of-type(2n),
+      .block-data__content .empty:nth-of-type(2n) {
+        margin-right: 0; } }
+
+@media screen and (max-width: 768px) {
+  .block-data__content {
+    padding: 20px 40px; }
+    .block-data__content .site,
+    .block-data__content .empty {
+      width: 211px;
+      margin-right: 0; }
+      .block-data__content .site__image,
+      .block-data__content .empty__image {
+        height: 149px; } }

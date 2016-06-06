@@ -1,0 +1,33 @@
+@import "ad-common.scss";
+
+@media screen and (max-width: 768px) {
+	.offer__header {
+		padding: 30px 0;
+		font-size: 19px;
+		margin-bottom: 20px;
+	}
+	.form {
+		font-size: 15px;
+		padding: 0 15px;
+		&__block {
+			margin-bottom: 25px;
+		}
+	}
+	.form__name,
+	.form__email {
+		width: 100%;
+		padding-right: 0;
+		padding-left: 0;
+	}
+	.form__button {
+		.form__subblock {
+			font-size: 16px;
+		}
+		.form__submit {
+			padding-right: 28px;
+		}
+		.form__reset {
+			padding-left: 28px;
+		}
+	}
+}

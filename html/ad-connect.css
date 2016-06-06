@@ -1,0 +1,98 @@
+@media screen and (max-width: 958px) {
+  .hide-menu {
+    display: block;
+    float: right;
+    width: 30px;
+    height: 47px;
+    background: url("images/hamb.png") no-repeat 50% 50%;
+    margin-left: 55px;
+    cursor: pointer; }
+  .content,
+  .header__wrap,
+  .footer__wrap {
+    width: 704px;
+    margin: 0 auto; }
+  .sidebar,
+  .content {
+    float: none; }
+  .sidebar {
+    width: 100%; }
+  .lock,
+  .contacts__head,
+  .menu {
+    display: none; }
+  .contacts {
+    max-width: 958px;
+    margin-bottom: 20px; }
+    .contacts__list {
+      display: table;
+      table-layout: fixed;
+      width: 100%; }
+    .contacts__item {
+      display: inline-block;
+      width: 33.3%;
+      text-align: center; }
+      .contacts__item:last-of-type {
+        border-radius: 0; } }
+
+@media screen and (max-width: 768px) {
+  .header__wrap {
+    padding: 12px 0; }
+    .header__wrap .hide-menu {
+      height: 33px; }
+    .header__wrap .soc-icon {
+      display: none; }
+  .logo {
+    width: 169px; }
+    .logo__img {
+      width: 169px; }
+  .content,
+  .header__wrap,
+  .hide,
+  .footer__wrap {
+    width: 292px;
+    margin: 0 auto; }
+  .block-data {
+    text-align: center; }
+    .block-data__head {
+      display: block;
+      padding: 10px 0;
+      border-bottom: none;
+      font-size: 23px; }
+  .contacts {
+    margin-bottom: 20px; }
+    .contacts__list {
+      width: 100%; }
+    .contacts__item {
+      display: block;
+      width: 100%;
+      text-align: center; }
+      .contacts__item:last-of-type {
+        border-radius: 0; }
+  .main__wrap .hide {
+    display: block; }
+    .main__wrap .hide .soc-icon {
+      float: none;
+      text-align: center; } }
+
+@media screen and (max-width: 768px) {
+  .offer__header {
+    padding: 30px 0;
+    font-size: 19px;
+    margin-bottom: 20px; }
+  .form {
+    font-size: 15px;
+    padding: 0 15px; }
+    .form__block {
+      margin-bottom: 25px; }
+  .form__name,
+  .form__email {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0; }
+  .form__button .form__subblock {
+    font-size: 16px; }
+  .form__button .form__submit {
+    padding-right: 28px; }
+  .form__button .form__reset {
+    padding-left: 28px; } }

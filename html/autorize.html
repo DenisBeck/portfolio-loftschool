@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css"/>
+    <link rel="stylesheet" href="fonts/fira/fira.css"/>
+    <link rel="stylesheet" href="fonts/prox/proxima.css"/>
+  </head>
+  <body>
+    <div id="autorize" class="container">
+      <div class="main">
+        <div class="autorize bg-color">
+          <h1 class="autorize__header">Авторизируйтесь</h1>
+          <form class="autorize__form">
+            <div class="autorize__name autorize__block">
+              <p class="autorize__label">
+                <label for="autorize__name">Логин</label>
+              </p>
+              <input type="text" id="autorize__name"/>
+              <div class="elem__error hide">введите логин</div>
+            </div>
+            <div class="autorize__password autorize__block">
+              <p class="autorize__label">
+                <label for="autorize__password">Пароль</label>
+              </p>
+              <input type="password" id="autorize__password"/>
+              <div class="elem__error hide">введите пароль</div>
+            </div>
+            <div class="autorize__button">
+              <input type="submit" value="Войти"/>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer class="footer bg-color">
+      <div class="footer__wrap">
+        <div class="lock"></div>
+        <div class="copyright">&copy; 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его</div>
+      </div>
+    </footer>
+    <script src="bower/jquery/dist/jquery.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="utf-8")
+		title document
+		link(rel="stylesheet", href="bower/normalize-css/normalize.css")
+		link(rel="stylesheet", href="main.css")
+		link(rel="stylesheet", href="ad-connect.css")
+		link(rel="stylesheet", href="fonts/fira/fira.css")
+		link(rel="stylesheet", href="fonts/prox/proxima.css")
+	body
+		.container#connect
+			include header.jade
+			.main
+				.main__wrap.clearfix
+					.content
+						section.offer.bg-color
+							h1.offer__header У вас интересный проект? Напишите мне
+							form.form.clearfix
+								.form__name.form__block
+									p.form__label
+										label(for="name") Имя
+									input#name.form__item(type="text" placeholder="Как и зачем обращаться")
+								.form__email.form__block
+									p.form__label
+										label(for="email") Email
+									input#email.form__item(type="email" placeholder="Куда мне писать")
+								.form__message.form__block
+									p.form__label
+										label(for="message") Сообщение
+									textarea#message.form__item(name="", rows="10" placeholder="Кратко в чем суть" noresizable)
+								.form__code.form__block
+									p.form__label
+										label(for="") Введите код, указанный на картинке
+								.form__button.form__block
+									.form__submit.form__subblock
+										input(type="submit" value="Отправить")
+									.form__reset.form__subblock
+										input(type="reset" value="Очистить")
+					.sidebar
+						include navmenu.jade
+						include contacts.jade
+					.hide
+						include soc-icon.jade
+		include footer.jade
+
+		script(src="bower/jquery/dist/jquery.js")
+		script(src="main.js")

@@ -1,0 +1,45 @@
+include objects.jade
+
+mixin site(obj1)
+	.site
+		.site__image
+			img(src="#{obj1.image}", alt="")
+		.site__head #{obj1.title}
+		.site__info #{obj1.descr}
+
+doctype html
+html(lang="en")
+	head
+		meta(charset="utf-8")
+		title document
+		link(rel="stylesheet", href="bower/normalize-css/normalize.css")
+		link(rel="stylesheet", href="main.css")
+		link(rel="stylesheet", href="ad-myWorks.css")
+		link(rel="stylesheet", href="fonts/fira/fira.css")
+		link(rel="stylesheet", href="fonts/prox/proxima.css")
+	body
+		.container#works
+			include header.jade
+			.main
+				.main__wrap.clearfix
+					.content
+						section.works.bg-color.block-data
+							h2.works__head.block-data__head Мои работы
+							.block-data__content
+								for site in collection
+									+site(site)
+								.empty
+									a.empty__add(href="#")
+										.empty__link
+											img(src="images/empty.png", alt="")
+										.empty__text Добавить проект
+					.sidebar
+						include navmenu.jade
+						include contacts.jade	
+					.hide
+						include soc-icon.jade
+		include footer.jade
+		include popup.jade
+
+		script(src="bower/jquery/dist/jquery.js")
+		script(src="main.js")

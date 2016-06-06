@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>document</title>
+    <link rel="stylesheet" href="bower/normalize-css/normalize.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="ad-connect.css">
+    <link rel="stylesheet" href="fonts/fira/fira.css">
+    <link rel="stylesheet" href="fonts/prox/proxima.css">
+  </head>
+  <body>
+    <div id="connect" class="container">
+      <header class="header bg-color">
+        <div class="header__wrap clearfix">
+          <div class="logo"><a href="index.html" class="logo__link"><img src="images/logo.png" alt="logo" class="logo__img"></a></div>
+          <div class="hide-menu">
+            <nav class="menu bg-color">
+              <ul class="menu__list">
+                <li class="menu__item"><a href="index.html" class="menu__link">Обо мне</a></li>
+                <li class="menu__item"><a href="myWorks.html" class="menu__link">Мои работы</a></li>
+                <li class="menu__item"> <a href="connect.html" class="menu__link">Связаться со мной</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="soc-icon">
+            <ul class="soc-icon__list">
+              <li class="soc-icon__item"><a href="#" class="soc-icon__link vk"></a></li>
+              <li class="soc-icon__item"><a href="#" class="soc-icon__link tw"></a></li>
+              <li class="soc-icon__item"><a href="#" class="soc-icon__link fb"></a></li>
+              <li class="soc-icon__item"><a href="#" class="soc-icon__link gh"></a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="main">
+        <div class="main__wrap clearfix">
+          <div class="content">
+            <section class="offer bg-color">
+              <h1 class="offer__header">У вас интересный проект? Напишите мне</h1>
+              <form class="form clearfix">
+                <div class="form__name form__block">
+                  <p class="form__label">
+                    <label for="name">Имя</label>
+                  </p>
+                  <input id="name" type="text" placeholder="Как и зачем обращаться" class="form__item">
+                </div>
+                <div class="form__email form__block">
+                  <p class="form__label">
+                    <label for="email">Email</label>
+                  </p>
+                  <input id="email" type="email" placeholder="Куда мне писать" class="form__item">
+                </div>
+                <div class="form__message form__block">
+                  <p class="form__label">
+                    <label for="message">Сообщение</label>
+                  </p>
+                  <textarea id="message" name="" rows="10" placeholder="Кратко в чем суть" noresizable class="form__item"></textarea>
+                </div>
+                <div class="form__code form__block">
+                  <p class="form__label">
+                    <label for="">Введите код, указанный на картинке</label>
+                  </p>
+                </div>
+                <div class="form__button form__block">
+                  <div class="form__submit form__subblock">
+                    <input type="submit" value="Отправить">
+                  </div>
+                  <div class="form__reset form__subblock">
+                    <input type="reset" value="Очистить">
+                  </div>
+                </div>
+              </form>
+            </section>
+          </div>
+          <div class="sidebar">
+            <nav class="menu bg-color">
+              <ul class="menu__list">
+                <li class="menu__item"><a href="index.html" class="menu__link">Обо мне</a></li>
+                <li class="menu__item"><a href="myWorks.html" class="menu__link">Мои работы</a></li>
+                <li class="menu__item"> <a href="connect.html" class="menu__link">Связаться со мной</a></li>
+              </ul>
+            </nav>
+            <div class="contacts">
+              <h2 class="contacts__head">Контакты</h2>
+              <ul class="contacts__list">
+                <li class="contacts__item contacts__post"><a href="mailto:beckass86@gmail.com" class="contacts__link">beckass86@<wbr>gmail.com</a></li>
+                <li class="contacts__item contacts__tel"><a href="#" class="contacts__link">+79126987925</a></li>
+                <li class="contacts__item contacts__skype"><a href="#" class="contacts__link">denny13241</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="hide">
+            <div class="soc-icon">
+              <ul class="soc-icon__list">
+                <li class="soc-icon__item"><a href="#" class="soc-icon__link vk"></a></li>
+                <li class="soc-icon__item"><a href="#" class="soc-icon__link tw"></a></li>
+                <li class="soc-icon__item"><a href="#" class="soc-icon__link fb"></a></li>
+                <li class="soc-icon__item"><a href="#" class="soc-icon__link gh"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer bg-color">
+      <div class="footer__wrap">
+        <div class="lock"></div>
+        <div class="copyright">&copy; 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его</div>
+      </div>
+    </footer>
+    <script src="bower/jquery/dist/jquery.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

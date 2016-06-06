@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		title Document
+		link(rel="stylesheet", href="main.css")
+		link(rel="stylesheet", href="fonts/fira/fira.css")
+		link(rel="stylesheet", href="fonts/prox/proxima.css")
+	body
+		.container#autorize
+			.main
+				.autorize.bg-color
+					h1.autorize__header Авторизируйтесь
+					form.autorize__form
+						.autorize__name.autorize__block
+							p.autorize__label
+								label(for="autorize__name") Логин
+							input(type="text" id="autorize__name")
+							.elem__error.hide введите логин
+						.autorize__password.autorize__block
+							p.autorize__label
+								label(for="autorize__password") Пароль
+							input(type="password" id="autorize__password")
+							.elem__error.hide введите пароль
+						.autorize__button
+							input(type="submit" value="Войти")
+		include footer.jade
+
+		script(src="bower/jquery/dist/jquery.js")
+		script(src="main.js")
+	
+
+	

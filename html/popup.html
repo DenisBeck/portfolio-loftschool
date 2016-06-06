@@ -1,0 +1,39 @@
+
+<div class="popup hide">
+  <div class="popup__form bg-color">
+    <h2 class="popup__header">Добавление проекта</h2>
+    <form action="" class="add-project">
+      <div class="add-project__name add-project__block">
+        <p class="popup__label">
+          <label for="popup-name">Название проекта</label>
+        </p>
+        <input type="text" id="popup-name" placeholder="Введите название"/>
+        <div class="elem__error hide">введите название</div>
+      </div>
+      <div class="add-project__pic add-project__block">
+        <p class="popup__label">
+          <label for="popup-pic">Картинка проекта</label>
+        </p>
+        <div class="add-project__replace">Загрузите изображение</div>
+        <input type="file" id="popup-name" placeholder="Загрузите изображение"/>
+        <div class="elem__error hide">изображение</div>
+      </div>
+      <div class="add-project__url add-project__block">
+        <p class="popup__label">
+          <label for="popup-url">URL проекта</label>
+        </p>
+        <input type="url" id="popup-url" placeholder="Добавьте ссылку"/>
+        <div class="elem__error hide">ссылка на проект</div>
+      </div>
+      <div class="add-project__text add-project__block">
+        <p class="popup__label">
+          <label for="popup-text">Описание</label>
+        </p>
+        <textarea name="" id="popup-text" placeholder="Пара слов о Вашем проекте"></textarea>
+      </div>
+      <div class="add-project__button">
+        <input type="submit" value="Добавить"/>
+      </div>
+    </form><a href="#" class="popup__close">x</a>
+  </div>
+</div>

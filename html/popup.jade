@@ -1,0 +1,27 @@
+.popup.hide
+	.popup__form.bg-color
+		h2.popup__header Добавление проекта
+		form(action="").add-project
+			.add-project__name.add-project__block
+				p.popup__label
+					label(for="popup-name") Название проекта
+				input(type="text" id="popup-name" placeholder="Введите название")
+				.elem__error.hide введите название
+			.add-project__pic.add-project__block
+				p.popup__label
+					label(for="popup-pic") Картинка проекта
+				.add-project__replace Загрузите изображение
+				input(type="file" id="popup-name" placeholder="Загрузите изображение")
+				.elem__error.hide изображение
+			.add-project__url.add-project__block
+				p.popup__label
+					label(for="popup-url") URL проекта
+				input(type="url" id="popup-url" placeholder="Добавьте ссылку")
+				.elem__error.hide ссылка на проект
+			.add-project__text.add-project__block
+				p.popup__label
+					label(for="popup-text") Описание
+				textarea(name="" id="popup-text" placeholder="Пара слов о Вашем проекте")
+			.add-project__button
+				input(type="submit" value="Добавить")
+		a(href="#").popup__close x

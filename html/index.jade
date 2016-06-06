@@ -1,0 +1,74 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="utf-8")
+		title document
+		link(rel="stylesheet", href="bower/normalize-css/normalize.css")
+		link(rel="stylesheet", href="main.css")
+		link(rel="stylesheet", href="ad-index.css")
+		link(rel="stylesheet", href="fonts/fira/fira.css")
+		link(rel="stylesheet", href="fonts/prox/proxima.css")
+	body
+		.container#about
+			include header.jade
+			.main
+				.main__wrap.clearfix
+					.content
+						section.basic-info.bg-color.block-data
+							h2.basic-info__head.block-data__head Основная информация
+							.person-data.block-data__content.clearfix
+								.photo
+									img.photo__img(src="images/userpic.png", alt="")
+								p.person-data__name Меня зовут:<wbr> 
+									span Бекленищев Денис Николаевич
+								p.person-data__age Мой возраст: 
+									span 29 лет
+								p.person-data__city Мой город: 
+									span Каменск-Уральский
+								p.person-data__profession Моя специализация: 
+									span FRONTEND разработчик 
+								.person-data__skills Ключевые навыки:
+									ul.person-data__list
+										li.person-data__item
+											a.person-data__link(href="#")
+										li.person-data__item
+											a.person-data__link(href="#")
+										li.person-data__item
+											a.person-data__link(href="#")
+										li.person-data__item
+											a.person-data__link(href="#")
+										li.person-data__item
+											a.person-data__link(href="#")
+						section.experience.bg-color.block-data
+							h2.experience__head.block-data__head Опыт работы
+							.block-data__content
+								ul.block-data__list
+									li.block-data__item.work
+										.block-data__info
+											p.place "ЗАО ППЭА Сивар" - Кладовщик
+											p.time Апрель 2008 - Сентябрь 2011
+									li.block-data__item.work
+										.block-data__info
+											p.place "ООО Пальметта" - Кладовщик
+											p.time Август 2013 - по настоящее время
+						section.education.bg-color.block-data
+							h2.education__head.block-data__head Образование
+							.block-data__content
+								ul.block-data__list
+									li.block-data__item.study
+										.block-data__info
+											p.place Среднее специальное. ЕЭТК
+											p.time Сентябрь 2005 - Июль 2008
+									li.block-data__item.course
+										.block-data__info
+											p.place Курсы Loftschool.ru
+											p.time Июнь 2016 - по настоящее время
+					.sidebar
+						include navmenu.jade
+						include contacts.jade
+					.hide
+						include soc-icon.jade
+		include footer.jade
+
+		script(src="bower/jquery/dist/jquery.js")
+		script(src="main.js")
